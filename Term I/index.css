@@ -1,0 +1,42 @@
+body{
+	background-image: url(Images/bg2.png);	/*to add background image*/
+	background-repeat: no-repeat;				/*to avoid repetation of background image*/
+	background-size: cover;						/*to fit the background image*/
+	margin: 0px;								/*beacause body has default margin*/
+}
+
+.menus{
+	display: flex;								/*to align menus in the same line*/
+	float: right;								/*to align the menus on the right side of the website*/
+}
+
+.m{
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 15px;	
+	color: white;			
+}
+
+.m:hover{
+	color: #3cc5ef;
+	cursor: pointer;
+}
+nav{
+	background-color: black;
+	width: 100%;
+	height: 64px;
+}
+
+#bar1,#bar2,#bar3{
+	width: 22px;
+	height: 1px;
+	background-color: white;
+	
+	margin-top: 2px; 
+}
+
+#bars{
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px; 
+}
