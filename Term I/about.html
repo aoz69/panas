@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Contact</title>
-	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
+
 	<nav>
 		<a href="site report.html" class="m">Site Report</a>
 		<a href="cv.html" class="m">CV</a>
@@ -13,18 +16,28 @@
 		<a href="index.html" class="m">Home</a>
 	</nav>	
 
-	<div class="contact">Contact Us</div>	
-
-	<form class="form">
+	<form class="form" method="post">
 		<fieldset>
-			Email:<br>
-			<input type="email" name="email"><br>
-			Username: <br>
-			<input type="text" name="message"><br>
-			Message:<br>
-			<textarea cols="35" rows="5" placeholder="Type a message..."></textarea> <br>
-			<input type="submit" name="submit">
+			<legend id="contact">CONTACT US</legend>
+
+				<div class="email">
+					<div id="con">Contact</div><br>
+					<div id="my_id">aozpokharel@gmail.com</div>
+				</div>
+
+				Email:<br>
+				<input type="email" name="email" placeholder="example@example.com"class="box"><br>
+				Full name:<br>
+				<input type="text" name="fn" placeholder="Remi Johnson" class="box"><br>
+				Message:<br>
+				<textarea cols="35" rows="5" min="5" max="100" placeholder="Type a message..."></textarea> <br>
+				<input type="submit" name="submit" id="submit">
+
 		</fieldset>
 	</form>
+
+	<img src="Images/art2.jpg" alt="company logo" id="logo">
+
 </body>
+
 </html>

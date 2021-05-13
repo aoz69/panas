@@ -1,0 +1,165 @@
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTHIS IS FOR HOME PAGExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+body{
+	background-image: url(Images/art1a.png);	/*to add background image*/
+	/*background-repeat: no-repeat;*/				/*to avoid repetation of background image*/
+	/*background-size: cover;*/					/*to fit the background image*/
+	margin: 0px;								/*beacause body has default margin*/
+}
+
+.menus{
+	display: flex;								/*to align menus in the same line*/
+	float: right;								/*to align the menus on the right side of the website*/
+}
+
+.m{
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 15px;	
+	color: white;
+	background-color: black;	
+	text-decoration: none;						/*in order to remove underline whule using a tag*/
+	float: right;
+}
+
+.m1{
+	color: red;
+}
+
+.m:hover{
+	color: #3cc5ef;
+	cursor: pointer;
+}
+
+nav{
+	background-color: black;
+	width: 100%;
+	height: 64px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+#bar1,#bar2,#bar3{				/*menus but not to show in original site*/
+	width: 22px;
+	height: 1px;
+	background-color: white;
+	margin-top: 5px;
+	margin-left: 5px;  
+	opacity: 0%;				/*not to show in unresponsive*/
+}
+
+#bars{
+	display: flex;
+	flex-direction: column;
+	padding-top: 15px; 
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+
+.art1{
+    width: 1353px;
+    height: 403px;
+    margin-left: 6px;
+}
+
+#name{                              /*this is for name*/ 
+    font-size: 156px;
+    color: #126e82;
+    margin-top: 135px;
+    margin-left: 473px;
+    /*background-color: #89c6fc;*/ 
+    width: 398px;
+    height: 198px;
+    backdrop-filter : blur(3px);
+}
+
+#intro{                         /*this is for text under name*/
+    color: #b97a56;
+    margin-top: -25px;
+    margin-left: 576px;
+    font-size: 21px;
+    /*background-color: #89c6fc;*/
+    width: 207px;
+    backdrop-filter : blur(3px);
+}   
+
+ /*#89c6fc*/
+
+
+.art2{
+    width: 618px;
+    height: 525px;
+    padding-left: 17px;
+    margin-top: 41px;	
+}
+
+#tagline{
+	margin-left: 462px;
+    font-size: 35px;
+    margin-top: -50px;
+    color: #d06adc;
+}
+
+
+#p1{
+	padding: 10px;
+}
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTHIS IS FOR HOME PAGExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTHIS IS FOR CONTACTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+#contact{
+    font-size: 40px;
+    color: #4f3cec;
+}
+
+.form{
+    font-size: 25px;
+    color: #126e82;
+    float: right;
+    width: 761px;
+    margin-right: 10px;
+    height: 375px;
+    margin-top: 97px;
+    backdrop-filter: blur(3px);	
+}
+
+.email{
+    float : right;
+    margin-right: 12px;
+}
+
+#con{
+    margin-right : 20px;
+    margin-bottom : -40px;
+    color : #4f3cec;
+    font-size: 31px;
+}
+
+#my_id{
+    color : #126e82;
+    font-size: 21px;
+}
+.box{
+    width: 210px;
+    height: 20px;
+}
+
+#logo{
+    height: 620px;
+    width: 567px;
+    margin-top: 7px;
+    margin-left: 12px;;
+}
+
+#submit{
+    margin-left : 10px; 
+
+}
