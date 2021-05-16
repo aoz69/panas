@@ -2,7 +2,7 @@
 
 body{
 	background-image: url(Images/art1a.png);	/*to add background image*/
-	/*background-repeat: no-repeat;*/				/*to avoid repetation of background image*/
+	/*background-repeat: no-repeat*/;				/*to avoid repetation of background image*/
 	/*background-size: cover;*/					/*to fit the background image*/
 	margin: 0px;								/*beacause body has default margin*/
 }
@@ -10,6 +10,7 @@ body{
 .menus{
 	display: flex;								/*to align menus in the same line*/
 	float: right;								/*to align the menus on the right side of the website*/
+    transform: rotate(90deg);
 }
 
 .m{
@@ -24,6 +25,8 @@ body{
 
 .m1{
 	color: red;
+/*    transform: rotateX(1800deg);                              EDIT THIS LATERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+    transition : 3s*/
 }
 
 .m:hover{
@@ -31,34 +34,12 @@ body{
 	cursor: pointer;
 }
 
+
 nav{
 	background-color: black;
 	width: 100%;
 	height: 64px;
 }
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-
-#bar1,#bar2,#bar3{				/*menus but not to show in original site*/
-	width: 22px;
-	height: 1px;
-	background-color: white;
-	margin-top: 5px;
-	margin-left: 5px;  
-	opacity: 0%;				/*not to show in unresponsive*/
-}
-
-#bars{
-	display: flex;
-	flex-direction: column;
-	padding-top: 15px; 
-}
-
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-
-
 
 .art1{
     width: 1353px;
@@ -74,7 +55,7 @@ nav{
     /*background-color: #89c6fc;*/ 
     width: 398px;
     height: 198px;
-    backdrop-filter : blur(3px);
+    backdrop-filter : blur(100px);
 }
 
 #intro{                         /*this is for text under name*/
@@ -109,10 +90,82 @@ nav{
 	padding: 10px;
 }
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTHIS IS FOR HOME PAGExxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxTHIS IS FOR CONTACTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*....................................................START OF RESPONSIVE FOR HOME PAGE ....................................................*/
+
+@media screen and (max-width:700px){
+
+
+    body{
+        margin:0px;
+    }
+
+    nav{
+        background-color: black;
+        width: 100%;
+        height: 64px;
+    }
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+    #bar1,#bar2,#bar3{              /*menus but not to show in original site*/
+        width: 22px;
+        height: 1px;
+        background-color: white;
+        margin-top: 6px;
+        margin-left: 7px;  
+    }
+
+    #bars{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px; 
+    }
+
+
+    #bar1,#bar2,#bar3:hover{
+            color: red;
+        
+    }
+    .m{
+        visibility :hidden;
+    }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    
+
+
+
+    #name{                              /*this is for name*/ 
+        font-size: 140px;
+        color: #126e82;
+        margin-top: 174px;
+        margin-left: 24px;
+        width: 398px;
+        height: 198px;
+        backdrop-filter: blur(3px);
+    }
+
+    #intro{ 
+        color: #b97a56;
+        margin-top: -31px;
+        margin-left: 93px;
+        font-size: 21px;
+        width: 207px;
+        backdrop-filter: blur(3px);
+    }
+
+
+}
+
+/*.................................................... END OF RESPONSIVE FOR HOME PAGE ....................................................*/
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END OF HOME PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx START OF CONTACT PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
 #contact{
@@ -124,7 +177,7 @@ nav{
     font-size: 25px;
     color: #126e82;
     float: right;
-    width: 761px;
+    width: 751px;
     margin-right: 10px;
     height: 375px;
     margin-top: 97px;
@@ -163,3 +216,140 @@ nav{
     margin-left : 10px; 
 
 }
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  THIS IS FOR CV  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+#my_photo{                      /*This is id of my picture in cv page*/
+    width: 114px;
+    margin-left: 16px;
+    margin-top: 6px;
+    height: 109px;
+    float: left;
+    border-radius: 100%;
+}
+
+#my_name{               /*this is for my name*/
+    margin-top: 15px;
+    color: #2b5d90;
+    font-size: 31px;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+}
+
+#cv_tagline{             /* this is for tagline*/
+    backdrop-filter: blur(5px);
+    color : #126e82;
+}
+
+#cv_about{       /*This is for Personal data*/
+    font-size: 44px;
+    border: solid black;
+    font-weight: bold;
+    /*color: #126E80;*/
+    margin-top: 5px;
+    margin-left: 10px; 
+    width: 527px;
+    backdrop-filter: blur(5px);
+    float: left;
+    margin-right :20px;
+    box-shadow: 4px 4px;
+    color: #5f7177;
+}
+
+#cv_about1{         /*This is for hobbies*/
+    font-size: 44px;
+    border: solid black;
+    font-weight: bold;
+    color: #126E80;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 527px;
+    backdrop-filter: blur(5px);
+    clear: both;
+    float: left;
+    box-shadow: 4px 4px;
+    color: #5f7177;
+}
+
+#cv_about2{         /*This is for language*/
+    font-size: 44px;
+    border: solid black;
+    font-weight: bold;
+    color: #126E80;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 527px;
+    backdrop-filter: blur(5px);
+    clear: both;
+    float: right;
+    margin-bottom: 5px;
+    box-shadow: 4px 4px;
+    color: #5f7177;
+}
+
+#cv_about3{         /*This is for skills section*/
+   font-size: 44px;
+    border: solid black;
+    font-weight: bold;
+    color: #126E80;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 527px;
+    backdrop-filter: blur(5px);
+    float: left;
+    clear: both;
+    margin-bottom: 5px;
+    box-shadow: 4px 4px;
+    color: #5f7177;
+    height: 187px;
+
+}
+
+
+.cv_q{                          /*this is for table head */
+    font-size: 44px;
+    font-weight: bold;
+    color: #126e82;
+    backdrop-filter: blur(5px);
+}
+
+#cv_name{                       /*this is for overall information*/
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #26241f;
+}
+
+#photo_box{             /*this is for photo's div*/
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+td{
+   background-color: #77acf1;
+   font-size : 23px;
+   text-align:center;
+}
+
+        
+table{                      
+    margin-top: 5px;
+    margin-right: 5px;
+    font-color: #393e46;
+    height: 180px;
+    backdrop-filter: blur(5px);
+    border: solid black;
+    box-shadow: 4px 4px;
+    color: #5f7177;
+}
+
+#height{                /*this is photo and tagline cointainer*/
+    height: 117px;
+    display: flex;
+}
+
+span{
+    text-color:#b97a56;
+}
+
