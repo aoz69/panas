@@ -25,7 +25,7 @@ body{
 
 .m1{
 	color: red;
-/*    transform: rotateX(1800deg);                              EDIT THIS LATERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+/*    transform: rotateX(1800deg);                             ANIMATIONS EDIT THIS LATERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
     transition : 3s*/
 }
 
@@ -47,29 +47,48 @@ nav{
     margin-left: 6px;
 }
 
-#name{                              /*this is for name*/ 
-    font-size: 156px;
-    color: #126e82;
-    margin-top: 135px;
-    margin-left: 473px;
-    /*background-color: #89c6fc;*/ 
-    width: 398px;
-    height: 198px;
-    backdrop-filter : blur(100px);
+#scroll{
+    height: 630px;
+    width: 819px;
+    padding-top: 48px;
+    padding-left: 246px;
 }
 
-#intro{                         /*this is for text under name*/
+
+#intro{                         /*this is for text under name in home page */
     color: #b97a56;
-    margin-top: -25px;
-    margin-left: 576px;
-    font-size: 21px;
-    /*background-color: #89c6fc;*/
-    width: 207px;
-    backdrop-filter : blur(3px);
+    font-size: 34px;
+    width: 321px;
+    color: #126e82;
+    padding-left: 35px;
+    margin-left: -46px;
+    text-align: center;
 }   
 
- /*#89c6fc*/
+#intro1{                    /*this is for frontpage intro*/
+    margin-top: -595px;
+    color: #126e82;
+    margin-left: 510px;
+    font-size: 19px;
+    width: fit-content;
+}
 
+h1{
+    margin-left: 7px;
+    font-size: 61px;
+    margin-top: 48px;
+    height: 30px;
+}
+
+#home_button{
+    margin-left: 104px;
+    text-decoration: none;
+    background-color: #f0d9a5;
+    color: black;
+    border-radius: 50px;
+    border: solid;
+    padding: 4px;
+}
 
 .art2{
     width: 618px;
@@ -176,12 +195,12 @@ nav{
 .form{
     font-size: 25px;
     color: #126e82;
-    float: right;
-    width: 751px;
-    margin-right: 10px;
-    height: 375px;
+    float: left;
+    width: 750px;
+    height: 374px;
     margin-top: 97px;
-    backdrop-filter: blur(3px);	
+    margin-left: 19px;
+    backdrop-filter: blur(3px);
 }
 
 .email{
@@ -205,11 +224,12 @@ nav{
     height: 20px;
 }
 
-#logo{
+#logo{                                /* this is for photo in about us*/
     height: 620px;
     width: 567px;
-    margin-top: 7px;
-    margin-left: 12px;;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 #submit{
@@ -234,7 +254,11 @@ nav{
     color: #2b5d90;
     font-size: 31px;
     font-weight: bold;
-    backdrop-filter: blur(8px);
+    /*backdrop-filter: blur(100px);*/
+    background-color:#89c6fc;
+    border: solid 1px;
+    border-radius:50px;
+    border-color: #89c6fc;
 }
 
 #cv_tagline{             /* this is for tagline*/
@@ -248,13 +272,15 @@ nav{
     font-weight: bold;
     /*color: #126E80;*/
     margin-top: 5px;
+    margin-bottom:25px;
     margin-left: 10px; 
     width: 527px;
     backdrop-filter: blur(5px);
-    float: left;
     margin-right :20px;
     box-shadow: 4px 4px;
     color: #5f7177;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 #cv_about1{         /*This is for hobbies*/
@@ -262,49 +288,47 @@ nav{
     border: solid black;
     font-weight: bold;
     color: #126E80;
-    margin-top: 5px;
     margin-left: 10px;
     width: 527px;
     backdrop-filter: blur(5px);
     clear: both;
-    float: left;
     box-shadow: 4px 4px;
     color: #5f7177;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
+
 
 #cv_about2{         /*This is for language*/
     font-size: 44px;
     border: solid black;
     font-weight: bold;
-    color: #126E80;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 10px;
     width: 527px;
-    backdrop-filter: blur(5px);
     clear: both;
-    float: right;
+    backdrop-filter: blur(5px);
     margin-bottom: 5px;
     box-shadow: 4px 4px;
     color: #5f7177;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 #cv_about3{         /*This is for skills section*/
-   font-size: 44px;
+    font-size: 44px;
     border: solid black;
     font-weight: bold;
-    color: #126E80;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 527px;
+    margin-top: 38px;
+    width: 760px;
     backdrop-filter: blur(5px);
     float: left;
-    clear: both;
     margin-bottom: 5px;
     box-shadow: 4px 4px;
     color: #5f7177;
-    height: 187px;
-
-}
+    padding-left: 5px;
+    padding-bottom: 5px;
+}   
 
 
 .cv_q{                          /*this is for table head */
@@ -315,11 +339,12 @@ nav{
 }
 
 #cv_name{                       /*this is for overall information*/
-    margin-left: 25px;
-    font-size: 25px;
+    margin-left: 6px;
+    font-size: 14px;
     font-weight: bold;
     color: #26241f;
 }
+
 
 #photo_box{             /*this is for photo's div*/
     margin-left: 5px;
@@ -334,7 +359,8 @@ td{
 
         
 table{                      
-    margin-top: 5px;
+    margin-top: 120px;
+    margin-bottom: 1px;
     margin-right: 5px;
     font-color: #393e46;
     height: 180px;
@@ -342,6 +368,7 @@ table{
     border: solid black;
     box-shadow: 4px 4px;
     color: #5f7177;
+    padding:5px;
 }
 
 #height{                /*this is photo and tagline cointainer*/
@@ -353,3 +380,7 @@ span{
     text-color:#b97a56;
 }
 
+
+#align{                             /*To align info,language and hobbies to the left*/
+    float: left;
+}
