@@ -245,7 +245,7 @@ td{
         
 table{                      
     margin-top: 10px;
-    font-color: #393e46;
+    color: #393e46;
     height: 180px;
     backdrop-filter: blur(5px);
     border: solid black;
@@ -260,7 +260,26 @@ table{
 }
 
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx START OF PORTFOLIO PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+
+.size-img{
+    width: 542px;
+}
+
+.grid{                      /*this is for protfolio */
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 47px;
+    column-gap: 100px;
+    width: fit-content;
+    margin-left: 9%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx START OF PORTFOLIO PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 
@@ -307,7 +326,6 @@ table{
     }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     
-
 
 
     #name{                              /*this is for name*/ 
