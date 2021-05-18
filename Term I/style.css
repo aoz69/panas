@@ -21,6 +21,9 @@ body{
 	background-color: black;	
 	text-decoration: none;						/*in order to remove underline whule using a tag*/
 	float: right;
+	animation: size;
+	animation-duration: .5s;
+	position: relative;
 }
 
 .m1{
@@ -39,6 +42,11 @@ nav{                                        /*for the navigation menu*/
 	background-color: black;
 	width: 100%;
 	height: 64px;
+}
+
+@keyframes size {
+	to{transform: rotateX(0deg);}
+	from{transform: rotateX(90deg); transform-origin: bottom;}
 }
 
 #scroll{                                    /*this is for the old scroll photo in the homepage*/
@@ -132,7 +140,8 @@ form{                           /*this is for form*/
 }
 
 #logo{                                /* this is for photo in contact us*/
-    height: 620px;
+     height: auto; 
+    /* height: 620px; */
     width: 567px;
     float: left;
     margin-left: 5px;
@@ -145,8 +154,6 @@ form{                           /*this is for form*/
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx End OF CONTACT PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-
 
 
 
@@ -181,77 +188,38 @@ span{
     color : #126e82;
 }
 
+#grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1px;
+    margin-right: 15px;
+}
 
-#cv_about{       /*This is for Personal data*/
+
+#cv_about{              /* This is for Personal data,hobbies,language, skills and qualifications*/
     font-size: 44px;
     border: solid black;
     font-weight: bold;
-    /*color: #126E80;*/
-    margin-top: 5px;
-    margin-bottom:25px;
+    margin-top: 10px;
+    margin-bottom:5px;
     margin-left: 10px; 
     width: 527px;
     backdrop-filter: blur(5px);
-    margin-right :20px;
+
     box-shadow: 4px 4px;
     color: #5f7177;
     padding-left: 5px;
     padding-bottom: 5px;
 }
 
-#cv_about1{         /*This is for hobbies*/
-    font-size: 44px;
-    border: solid black;
-    font-weight: bold;
-    color: #126E80;
-    margin-left: 10px;
-    width: 527px;
-    backdrop-filter: blur(5px);
-    clear: both;
-    box-shadow: 4px 4px;
-    color: #5f7177;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-
-#cv_about2{         /*This is for language*/
-    font-size: 44px;
-    border: solid black;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-left: 10px;
-    width: 527px;
-    clear: both;
-    backdrop-filter: blur(5px);
-    margin-bottom: 5px;
-    box-shadow: 4px 4px;
-    color: #5f7177;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}
-
-#cv_about3{         /*This is for skills section*/
-    font-size: 44px;
-    border: solid black;
-    font-weight: bold;
-    margin-top: 38px;
-    width: 760px;
-    backdrop-filter: blur(5px);
-    float: left;
-    margin-bottom: 5px;
-    box-shadow: 4px 4px;
-    color: #5f7177;
-    padding-left: 5px;
-    padding-bottom: 5px;
-}   
 
 
 .cv_q{                          /*this is for table head */
     font-size: 44px;
     font-weight: bold;
-    color: #126e82;
+    color: #5f7177;
     backdrop-filter: blur(5px);
+    text-align: left;
 }
 
 #cv_name{                       /*this is for overall information*/
@@ -262,47 +230,34 @@ span{
 }
 
 
-#photo_box{             /*this is for photo's div*/
+#photo_box{             /*this is for name nad tagline*/
     margin-left: 5px;
     margin-top: 15px;
 }
 
 td{
-   background-color: #77acf1;
-   font-size : 23px;
-   text-align:center;
+    background-color: #77acf1;
+    font-size : 23px;
+    text-align:center;  
+
 }
 
         
 table{                      
-    margin-top: 120px;
-    margin-bottom: 1px;
-    margin-right: 5px;
+    margin-top: 10px;
     font-color: #393e46;
     height: 180px;
     backdrop-filter: blur(5px);
     border: solid black;
     box-shadow: 4px 4px;
     color: #5f7177;
-    padding:5px;
+
 }
 
 #height{                /*this is photo and tagline cointainer*/
     height: 117px;
     display: flex;
 }
-
-
-
-#align{                             /*To align info,language and hobbies to the left*/
-    float: left;
-}
-
-
-
-
-
-
 
 
 
