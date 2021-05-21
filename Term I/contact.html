@@ -10,35 +10,54 @@
 <body>
 
 	<nav>
-		<a href="site report.html" class="m">Site Report</a>
-		<a href="cv.html" class="m">CV</a>
-		<a href="contact.html" class="m m1">Contact</a>
-		<a href="portfolio.html" class="m">Portfolio</a>
-		<a href="index.html" class="m">Home</a>
+
+		
+		<div id="hamburger">
+			<input type="checkbox"	id="checkbox-hide"> 			<!--Hidden -->
+			<div id="bars">	
+				<div id="bar1"></div>
+				<div id="bar1"></div>
+				<div id="bar1"></div>
+			</div>
+
+			<div id="menu">
+			<a href="site report.html" class="m">Site Report</a>
+			<a href="cv.html" class="m">CV</a>
+			<a href="contact.html" class="m m1">Contact</a>
+			<a href="portfolio.html" class="m">Portfolio</a>
+			<a href="index.html" class="m ">Home</a>
+			</div>
+		
+
+		</div>
 	</nav>	
 
-	<img src="Images/art2.jpg" alt="company logo" id="logo">				
+	<div id="contact-grid">
+		<img src="Images/art2.jpg" alt="company logo" id="logo">				
 
-	<form id="form" action="mailto:aozpokharel@gmail.com" method="post">		
-		<fieldset>
-			<legend>CONTACT US</legend>
+		<form id="form" action="mailto:aozpokharel@gmail.com" method="post">		
+			<fieldset>
 
 				<div class="email">
 					<div id="con">Contact</div><br>
 					<div id="my_id">aozpokharel@gmail.com</div>
 				</div>
 
-				Email:<br>
-				<input type="email" name="email" placeholder="example@example.com"class="box"><br>
-				Full name:<br>
-				<input type="text" name="fn" placeholder="Remi Johnson" class="box"><br>
-				Message:<br>
-				<textarea name="Message" cols="35" rows="5" min="5" max="100" placeholder="Type a message..."></textarea> <br>
-				<input type="submit" name="submit" id="submit">
-
-		</fieldset>
-	</form>
-
+				<legend>CONTACT US</legend>
+					<div id="form2">
+						Email:<br>
+						<input type="email" name="email" placeholder="example@example.com"class="box"><br>
+						Full name:<br>
+						<input type="text" name="fn" placeholder="Remi Johnson" class="box"><br>
+						Message:<br>
+						<textarea name="Message" form="form" cols="35" rows="5" min="5" max="100" placeholder="Type a message..."></textarea> <br>
+						<input type="submit" name="submit" id="submit">
+					</div>		
+			</fieldset>
+		</form>
+	</div>
+		<a href="https://www.pinterest.com/pin/1196337389609418/" class="reference">Photo by zukellogs</a>
+	
 </body>
 
 

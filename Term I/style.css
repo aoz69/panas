@@ -7,16 +7,9 @@ body{
 	margin: 0px;								/*beacause body has default margin*/
 }
 
-.menus{
-	display: flex;								/*to align menus in the same line*/
-	float: right;								/*to align the menus on the right side of the website*/
-    transform: rotate(90deg);
-}
-
 .m{
-	margin-left: 10px;
-	margin-right: 20px;
-	margin-top: 15px;	
+
+    
 	color: white;
 	background-color: black;	
 	text-decoration: none;						/*in order to remove underline whule using a tag*/
@@ -24,12 +17,12 @@ body{
 	animation: size;
 	animation-duration: .5s;
 	position: relative;
+    margin-right: 15px;
+
 }
 
 .m1{
 	color: red;
-/*    transform: rotateX(1800deg);                             ANIMATIONS EDIT THIS LATERRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
-    transition : 3s*/
 }
 
 .m:hover{                                  /* in order to change color when mouse is hovered*/
@@ -44,53 +37,34 @@ nav{                                        /*for the navigation menu*/
 	height: 64px;
 }
 
-@keyframes size {
+ @keyframes size {                                   /*this is for nav animation */
 	to{transform: rotateX(0deg);}
 	from{transform: rotateX(90deg); transform-origin: bottom;}
 }
 
-#scroll{                                    /*this is for the old scroll photo in the homepage*/
-    height: 630px;
-    width: 819px;
-    padding-top: 48px;
-    padding-left: 246px;
+ #checkbox-hide{                                     /*this is for hiding check box for menu */
+    visibility: hidden; 
+    z-index: 2;
+ 
 }
 
 
 #intro{                         /*this is for the small introduction on the home page */
     color: #b97a56;
     font-size: 34px;
-    width: 321px;
-    color: black;
-    padding-left: 35px;
-    margin-left: -46px;
+    width: 100%;
+    color: #4f3cec;
+    /* padding-left: 35px;
+    margin-left: -46px; */
     text-align: center;
 }   
 
-#intro1{                    /*this container is for frontpage intro*/
-    margin-top: -595px;
-    margin-left: 510px;
-    font-size: 19px;
-}
 
 h1{
-    margin-left: 7px;
     font-size: 61px;
-    margin-top: 48px;
-    height: 30px;
+    margin-top: 78px;
+    color: #2b5d90;
 }
-
-#home_button{                       /*this is for the "About me" button*/
-    margin-left: 104px;
-    text-decoration: none;
-    background-color: #f0d9a5;
-    color: black;
-    border-radius: 50px;
-    border: solid;
-    padding: 4px;
-}
-
-
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END OF HOME PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
@@ -107,15 +81,18 @@ legend{                    /* this is for legend "CONTACT US"*/
     color: #4f3cec;
 }
 
+#contact-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 form{                           /*this is for form*/
     font-size: 25px;
     color: #126e82;
-    float: left;
     width: 750px;
     height: 374px;
-    margin-top: 97px;
-    margin-left:    19px;
-    backdrop-filter: blur(3px);
+     margin-top: 97px;
+    backdrop-filter: blur(3px); 
 }
 
 .email{                             /*this is for the cointainer of my email address*/
@@ -150,7 +127,11 @@ form{                           /*this is for form*/
 
 #submit{                                    /*this is for submit button*/
     margin-left : 10px; 
+}
 
+.reference{
+    clear:both;
+    float :left;
 }
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx End OF CONTACT PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -243,7 +224,7 @@ td{
 }
 
         
-table{                      
+ table{                              /*this is for qualification tabble */
     margin-top: 10px;
     color: #393e46;
     height: 180px;
@@ -251,6 +232,7 @@ table{
     border: solid black;
     box-shadow: 4px 4px;
     color: #5f7177;
+    margin-left: 6px;
 
 }
 
@@ -298,11 +280,10 @@ table{
         height: 64px;
     }
 
-
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
-    #bar1,#bar2,#bar3{              /*menus but not to show in original site*/
+    #bar1{              /*menus but not to show in original site*/
         width: 22px;
         height: 1px;
         background-color: white;
@@ -311,43 +292,81 @@ table{
     }
 
     #bars{
+        position: relative;
+        top: -11px;
+    }
+
+    #menu{
+        transform-origin: 0% 0%;
+        transform: translate(-100%,0);
+        transition: transform 0s;
+        float: none;
         display: flex;
         flex-direction: column;
-        padding-top: 15px; 
+        /* background-color: black; */
+        z-index: 2;
     }
 
+    #hamburger input:checked ~ #menu{
+        transform: none ;
+        transition-duration: 1s;
+    }
 
-    #bar1,#bar2,#bar3:hover{
-            color: red;
-        
-    }
-    .m{
-        visibility :hidden;
-    }
+    #checkbox-hide{                                     /*this is for hiding check box for menu */
+        visibility: visible;
+        opacity: 0%;
+        position: relative;
+        top: 18px;
+        left: 1px;
+        width: 26px;
+        height: 24px;
+   }
+
+   .m{
+    height: 35px;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    margin-top: -1px;
+    width: 102px;
+   }
+
+   .grid{
+    display: grid;
+    grid-template-columns: auto;
+   }
+
+   #grid{
+    display: grid; 
+    grid-template-columns: auto; 
+   }
+
+   form{
+       width: fit-content;
+
+   }
+
+   .emial{
+       float: none;
+   }
+
+    #contact-grid{                          /* this is for contact */
+    display: grid;
+    grid-template-columns: auto;
+
+   }
+
+   .reference{
+    float: right;
+    margin-right: 15px;
+   }
+
+   #logo{
+       width: fit-content;
+       margin:5px;
+   }
+
+
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-    
-
-
-    #name{                              /*this is for name*/ 
-        font-size: 140px;
-        color: #126e82;
-        margin-top: 174px;
-        margin-left: 24px;
-        width: 398px;
-        height: 198px;
-        backdrop-filter: blur(3px);
-    }
-
-    #intro{ 
-        color: #b97a56;
-        margin-top: -31px;
-        margin-left: 93px;
-        font-size: 21px;
-        width: 207px;
-        backdrop-filter: blur(3px);
-    }
-
-
 }
-
 /*.................................................... END OF RESPONSIVE FOR HOME PAGE ....................................................*/
