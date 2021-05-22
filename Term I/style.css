@@ -164,12 +164,12 @@ form{                           /*this is for form*/
     border-color: #89c6fc;
 }
    
-span{
-    backdrop-filter: blur(5px);     /* this is for tagline*/
+span{                                       /* this is for tagline*/
+    /* backdrop-filter: blur(5px);      */
     color : #126e82;
 }
 
-#grid{
+ #grid{                                              /*this is for cv */
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 1px;
@@ -184,9 +184,8 @@ span{
     margin-top: 10px;
     margin-bottom:5px;
     margin-left: 10px; 
-    width: 527px;
-    backdrop-filter: blur(5px);
-
+    width: 87%;
+    /* backdrop-filter: blur(5px); */
     box-shadow: 4px 4px;
     color: #5f7177;
     padding-left: 5px;
@@ -199,7 +198,7 @@ span{
     font-size: 44px;
     font-weight: bold;
     color: #5f7177;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     text-align: left;
 }
 
@@ -220,20 +219,22 @@ td{
     background-color: #77acf1;
     font-size : 23px;
     text-align:center;  
-
 }
+
+ #overflow{                          /*this is to make table responsive */
+     overflow-x: auto;
+ }
 
         
  table{                              /*this is for qualification tabble */
     margin-top: 10px;
     color: #393e46;
     height: 180px;
-    backdrop-filter: blur(5px);
+    /* backdrop-filter: blur(5px); */
     border: solid black;
     box-shadow: 4px 4px;
     color: #5f7177;
     margin-left: 6px;
-
 }
 
 #height{                /*this is photo and tagline cointainer*/
@@ -261,7 +262,7 @@ td{
 }
 
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx START OF PORTFOLIO PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END OF PORTFOLIO PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 
@@ -291,25 +292,24 @@ td{
         margin-left: 7px;  
     }
 
-    #bars{
+    #bars{                                 /*this is for hamburger icon */
         position: relative;
         top: -11px;
     }
 
-    #menu{
+     #menu{                                                      /*this is for menu in responsive view */
         transform-origin: 0% 0%;
         transform: translate(-100%,0);
         transition: transform 0s;
         float: none;
         display: flex;
         flex-direction: column;
-        /* background-color: black; */
-        z-index: 2;
+        /* z-index: 2; */
     }
 
-    #hamburger input:checked ~ #menu{
+    #hamburger input:checked ~ #menu{                   /*this is for activation menu when value is 1 */
         transform: none ;
-        transition-duration: 1s;
+        transition-duration: .5s;
     }
 
     #checkbox-hide{                                     /*this is for hiding check box for menu */
@@ -322,51 +322,87 @@ td{
         height: 24px;
    }
 
-   .m{
+    .m{                                              /*this is for menus */
     height: 35px;
     margin: 0%;
     padding: 0%;
     position: relative;
     margin-top: -1px;
-    width: 102px;
+    width: 100%;
    }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
-   .grid{
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Portfolio xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+   .grid{                                        /*this is for protfolio */
     display: grid;
     grid-template-columns: auto;
+    margin: 0;
    }
 
-   #grid{
-    display: grid; 
-    grid-template-columns: auto; 
+   .size-img {                 /*this is for portfolio images */
+    width: 311px;
+    }
+
+
+   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Portfolio xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+   
+
+    form{                                    /*this is for form in contact page */
+        width: 100%;
+        margin: 0;
+
    }
 
-   form{
-       width: fit-content;
-
-   }
-
-   .emial{
+    .emial{                                 /* this is for my email  */
        float: none;
    }
 
     #contact-grid{                          /* this is for contact */
     display: grid;
     grid-template-columns: auto;
-
    }
 
-   .reference{
+   .reference{                              /*this is for refrencing artist of the picture used in contact page */
     float: right;
     margin-right: 15px;
    }
 
-   #logo{
-       width: fit-content;
-       margin:5px;
+   #logo{                                   /* this is for photo in contact us*/
+    width: 100%;
+    margin: 0px;;
+}
+
+
+   /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+   
+
+
+
+   #grid{                                       /*this is for cv */
+    display: grid; 
+    grid-template-columns: auto; 
+   }
+
+   #cv_about{
+       margin-left: 0%;
+       margin-right: 0%;
+       margin-top: 10%;
+       
    }
 
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MENU BARS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
 }
 /*.................................................... END OF RESPONSIVE FOR HOME PAGE ....................................................*/
