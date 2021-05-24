@@ -13,7 +13,6 @@ body{
 	color: white;
 	background-color: black;	
 	text-decoration: none;						/*in order to remove underline whule using a tag*/
-	float: right;
 	animation: size;
 	animation-duration: .5s;
 	position: relative;
@@ -64,6 +63,10 @@ h1{
     font-size: 61px;
     margin-top: 78px;
     color: #2b5d90;
+}
+
+#menu{
+    text-align: right;
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END OF HOME PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
@@ -141,7 +144,8 @@ form{                           /*this is for form*/
 
 
 
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  THIS IS FOR CV  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
 
 #my_photo{                      /*This is id of my picture in cv page*/
     width: 114px;
@@ -243,6 +247,10 @@ td{
 }
 
 
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx START OF PORTFOLIO PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
@@ -266,9 +274,31 @@ td{
 
 
 
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of Site Report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+
+
+
+
+
+
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of Site Report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+
+
+
+
+
+
+
 /*....................................................START OF RESPONSIVE FOR HOME PAGE ....................................................*/
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
 
 
     body{
@@ -301,10 +331,9 @@ td{
         transform-origin: 0% 0%;
         transform: translate(-100%,0);
         transition: transform 0s;
-        float: none;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        /* z-index: 2; */
     }
 
     #hamburger input:checked ~ #menu{                   /*this is for activation menu when value is 1 */
@@ -344,6 +373,7 @@ td{
 
    .size-img {                 /*this is for portfolio images */
     width: 311px;
+    margin-left: 13vw;
     }
 
 
