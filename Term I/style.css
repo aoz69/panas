@@ -302,7 +302,19 @@ td{
     width: 72%;
 }
 
+.gallery-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 5px;
+}
 
+.gallery-grid img{
+    width:  100%;
+    height: 100%;
+}
 
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of Site Report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -457,6 +469,10 @@ td{
     .report-grid{
         display: grid;
         grid-template-columns: auto;
+    }
+        .gallery-grid{
+            grid-template-columns: auto;
+        }
     }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx site report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     
