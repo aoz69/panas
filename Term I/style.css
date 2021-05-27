@@ -95,7 +95,6 @@ form{                           /*this is for form*/
     width: 750px;
     height: 374px;
      margin-top: 97px;
-    backdrop-filter: blur(3px); 
 }
 
 .email{                             /*this is for the cointainer of my email address*/
@@ -278,11 +277,30 @@ td{
 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Start of Site Report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
+.report-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border: solid rgb(253, 253, 253); */
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(174, 170, 170);
+    margin: 0;
+}
 
+.full{
+    width: 72%;
+    margin-left: 69px;
+}
 
+.port{
+    width: 72%;
+    margin-left: 69px;  
+}
 
-
-
+.cv{
+    margin-left: 69px;
+    width: 72%;
+}
 
 
 
@@ -373,7 +391,6 @@ td{
 
    .size-img {                 /*this is for portfolio images */
     width: 311px;
-    margin-left: 13vw;
     }
 
 
@@ -433,6 +450,16 @@ td{
 
     /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
+
+                                
+
+    /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Site report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    .report-grid{
+        display: grid;
+        grid-template-columns: auto;
+    }
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx site report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    
 
 }
 /*.................................................... END OF RESPONSIVE FOR HOME PAGE ....................................................*/
