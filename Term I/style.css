@@ -433,13 +433,13 @@ td{
    }
 
     #contact-grid{                          /* this is for contact */
-    display: grid;
-    grid-template-columns: auto;
+        display: grid;
+        grid-template-columns: auto;
    }
 
    .reference{                              /*this is for refrencing artist of the picture used in contact page */
-    float: right;
-    margin-right: 15px;
+        float: right;
+        margin-right: 15px;
    }
 
    #logo{                                   /* this is for photo in contact us*/
