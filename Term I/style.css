@@ -5,9 +5,6 @@ body{
 	/*background-repeat: no-repeat*/;				/*to avoid repetation of background image*/
 	/*background-size: cover;*/					/*to fit the background image*/
 	margin: 0px;								/*beacause body has default margin*/
-    animation-name: test;
-	animation-duration: .5s;
-    animation-iteration-count: infinite;
 }
 
 .m{
@@ -66,11 +63,11 @@ h1{
 }
 
 #menu{
-    text-align: right;
+    /* text-align: right; */
     float: right;
     animation-name: size;
 	animation-duration: .5s;
-}
+} 
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END OF HOME PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 
@@ -287,7 +284,7 @@ td{
     /* border: solid rgb(253, 253, 253); */
     margin-top: 5px;
     width: 100%;
-    background-color: rgb(174, 170, 170);
+    background-color: rgb(7 23 56);
     margin: 0;
 }
 
@@ -375,7 +372,9 @@ td{
         transition: transform 0s;
         text-align: center;
         display: flex;
+        width: 100%;
         flex-direction: column;
+        animation: none;
     }
 
     #hamburger input:checked ~ #menu{                   /*this is for activation menu when value is 1 */
@@ -462,6 +461,7 @@ td{
    #grid{                                       /*this is for cv */
     display: grid; 
     grid-template-columns: auto; 
+    width: 95%;
    }
 
    .cv_about{
