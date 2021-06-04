@@ -427,26 +427,21 @@ td{
     form{                                    /*this is for form in contact page */
         width: 100%;
         margin: 0;
+   }
 
+   #contact-grid {
+    margin: 0;
+    grid-template-columns: auto;
+    margin-left: 6%;
+    margin-top: 33%;
    }
 
     .emial{                                 /* this is for my email  */
        float: none;
    }
 
-    #contact-grid{                          /* this is for contact */
-        display: grid;
-        grid-template-columns: auto;
-   }
-
-   .reference{                              /*this is for refrencing artist of the picture used in contact page */
-        float: right;
-        margin-right: 15px;
-   }
-
    #logo{                                   /* this is for photo in contact us*/
-    width: 100%;
-    margin: 0px;;
+    display: none;
 }
 
 
@@ -462,14 +457,14 @@ td{
     display: grid; 
     grid-template-columns: auto; 
     width: 95%;
-   }
+    }
 
    .cv_about{
        margin-left: 0%;
        margin-right: 0%;
        margin-top: 10%;
        
-   }
+    }
 
 
     /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx CV xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -487,7 +482,6 @@ td{
         grid-template-columns: auto;
     }
     
-
     }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx site report xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     
